@@ -1,11 +1,21 @@
 package main
 
 //import "fmt"
-import "github.com/marcelo-a-ipar/GoDesdeCero/variables"
+import (
+	"fmt"
+
+	"github.com/marcelo-a-ipar/GoDesdeCero/variables"
+)
 
 func main() {
 	//	fmt.Println("¡Hola, mundo!")
 
-	variables.MuestroEnteros()
+	//variables.MuestroEnteros()
 
+	//variables.RestoVariables()
+
+	estado, texto := variables.ConviertoaTexto(12345)
+
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
